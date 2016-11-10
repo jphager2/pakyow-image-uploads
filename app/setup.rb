@@ -13,6 +13,7 @@ Pakyow::App.define do
 
     app.name = 'image-upload'
 
+    Sequel::Model.plugin :timestamps, update_on_create: true
     app.db = Sequel.connect(ENV['DATABASE_URL'])
   end
 
