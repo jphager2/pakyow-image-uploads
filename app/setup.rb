@@ -13,6 +13,13 @@ Pakyow::App.define do
 
     app.name = 'image-upload'
 
+    CarrierWave.configure do |config|
+      config.root = File.join(
+        File.expand_path(app.root),
+        'public'
+      )
+    end
+
     Sequel::Model.plugin :timestamps, update_on_create: true
     app.db = Sequel.connect(ENV['DATABASE_URL'])
   end
