@@ -18,3 +18,4 @@ end
 gem 'sequel'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'carrierwave-sequel', :require => 'carrierwave/sequel'
+gem 'pg'

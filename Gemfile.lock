@@ -81,6 +81,7 @@ GEM
       pakyow-presenter (= 0.11.3)
       pakyow-realtime (= 0.11.3)
       pakyow-support (= 0.11.3)
+    pg (0.19.0)
     premailer (1.8.7)
       css_parser (>= 1.4.5)
       htmlentities (>= 4.0.0)
@@ -120,6 +121,7 @@ DEPENDENCIES
   carrierwave-sequel
   dotenv
   pakyow (~> 0.11.3)
+  pg
   puma
   rspec
   sequel
