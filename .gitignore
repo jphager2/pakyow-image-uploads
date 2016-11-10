@@ -11,3 +11,5 @@ bin
 .ruby-gemset
 *.swp
 *.swo
+
+public/uploads/
