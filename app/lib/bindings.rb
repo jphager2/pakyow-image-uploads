@@ -1,5 +1,8 @@
 Pakyow::App.bindings do
-  # define bindings here
+  scope :image do
+    restful :image
+  end
+
   scope :'uploaded-image' do
     binding :file do
       part :src do
