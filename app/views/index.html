@@ -1,6 +1,7 @@
 <h1>Pakyow Image Uploader</h1>
 
 <h2>Upload an image</h2>
+
 <form data-scope="image" enctype="multipart/form-data">
   <label for="image_html_title">HTML Title</label>
   <input id="image_html_title" data-prop="html_title" type="text">
@@ -9,12 +10,11 @@
   <br>
   <input type="submit" value="Upload">
 </form>
+
 <br>
 <br>
-<div data-scope="uploaded-image">
-  <figure>
-    <img data-prop="file" src="http://www.placehold.it/200X200">
-    <br>
-    <caption data-prop="html_title">Here is the caption</caption>
-  </figure>
-</div>
+
+<figure data-scope="uploaded-image">
+  <img data-prop="file" src="http://www.placehold.it/200X200">
+  <figcaption data-prop="html_title">Here is the caption</figcaption>
+</figure>
